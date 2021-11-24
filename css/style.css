@@ -87,3 +87,16 @@ h1 {
 }
 
 /** Card Buttons **/
+.card__payment {
+}
+.card__button, .card__button__cancel {
+    display: block;
+}
+.card__button {
+    color: var(--brightBlue);
+    background-color: var(--primaryColor);
+    border: none;
+
+    padding: 1rem 4rem;
+}
+.card__button__cancel {}
