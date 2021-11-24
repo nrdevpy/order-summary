@@ -18,5 +18,72 @@ html {
     box-sizing: border-box;
 }
 body {
+    height: 100vh;
     font-family: var(--fonts);
+    margin: 0;
+    color: var(--Dark-blue)
 }
+img {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+
+/* ····· Utilities ····· */
+.container {
+    margin: 0 1.5rem
+}
+
+/* ····· BEM ····· */
+
+/*** Background ***/
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--brightBlue);
+    height: 100%;
+}
+
+/*** Card ***/
+.card {
+    height: 75%;
+    background-color: #fff;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+/** Card Main **/
+.card__main p {
+    text-align: center;
+    color:var(--Desaturated-blue)
+}
+
+/** Card Plan **/
+.card__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.card__plan__text {
+    display: flex;
+    flex-direction: column;
+}
+.card__plan__text p {
+    margin: 0;
+}
+.card__plan a {
+    color: var(--primaryColor);
+    font-size: 14px;
+}
+.card__plan img {
+    width: 20%;
+}
+
+/** Card Buttons **/
