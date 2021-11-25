@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- icon page -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- icon page -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <title>Frontend Mentor | Order summary card</title>
-</head>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
   <body>
     <div class="background">
 
@@ -34,9 +34,11 @@
             You can now listen to millions of songs, audiobooks, and podcasts on any
             device anywhere you like!
           </p>
+        </main>
 
-          <!-- ========== Plan ========== -->
+        <!-- ========== Plan ========== -->
 
+        <section>
           <div class="card__plan">
             <img src="images/icon-music.svg" alt="icon-music">
             <div class="card__plan__text">
@@ -45,11 +47,13 @@
             </div>
             <a href="#">Change</a>
           </div>
-        </main>
+        </section>
 
         <!-- ========== Payment ========== -->
         <div class="card__payment">
-          <button class="card__button">Proceed to Payment</button>
+          <button class="card__button">
+            <a href="#">Proceed to Payment</a>
+          </button>
           <a class="card__button__cancel" href="#">Cancel Order</a>
         </div>
       </div>

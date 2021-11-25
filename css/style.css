@@ -14,19 +14,23 @@
 }
 
 /* ····· Globals ····· */
-html {
+* {
+    font-family: var(--fonts);
     box-sizing: border-box;
 }
+
 body {
     height: 100vh;
-    font-family: var(--fonts);
     margin: 0;
     color: var(--Dark-blue)
 }
+
 img {
     width: 100%;
 }
+
 h1 {
+    font-size: 24px;
     text-align: center;
 }
 
@@ -49,16 +53,16 @@ h1 {
 
 /*** Card ***/
 .card {
-    height: 75%;
+    color:var(--Desaturated-blue);
     background-color: #fff;
-
+    max-width: 25rem;
+    
     border-radius: 20px;
     overflow: hidden;
 }
 /** Card Main **/
 .card__main p {
     text-align: center;
-    color:var(--Desaturated-blue)
 }
 
 /** Card Plan **/
@@ -70,6 +74,8 @@ h1 {
     background-color: var(--Very-pale-blue);
     border-radius: 10px;
     padding: 1rem;
+    margin: 2rem auto;
+    width: 90%;
 }
 .card__plan__text {
     display: flex;
@@ -82,21 +88,41 @@ h1 {
     color: var(--primaryColor);
     font-size: 14px;
 }
+.card__plan span {
+    color:var(--Dark-blue);
+    font-weight: bold;
+}
 .card__plan img {
     width: 20%;
 }
 
 /** Card Buttons **/
 .card__payment {
-}
-.card__button, .card__button__cancel {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .card__button {
-    color: var(--brightBlue);
     background-color: var(--primaryColor);
+    width: 85%;
     border: none;
-
-    padding: 1rem 4rem;
+    border-radius: 10px;
 }
-.card__button__cancel {}
+.card__button a {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+    
+}
+.card__button__cancel {
+    color: inherit;
+    padding: 2rem;
+}
+
+.card__button__cancel,
+.card__button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
