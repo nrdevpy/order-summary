@@ -45,11 +45,19 @@ h1 {
 /*** Background ***/
 .background {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 
     background-color: var(--brightBlue);
     height: 100%;
+}
+@media screen and (min-width: 1280px) {
+    .background {
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 /*** Card ***/
@@ -132,4 +140,15 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+}
+
+/*** Footer ***/
+.attribution p{
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .attribution p {
+        display: inline;
+    }
 }
