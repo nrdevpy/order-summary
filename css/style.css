@@ -7,6 +7,7 @@
     --brightBlue: hsl(225, 100%, 94%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
+    --buttonHover: #766CF1;
 
     /* Typography */
     --fonts: 'Red Hat Display', sans-serif;
@@ -88,6 +89,10 @@ h1 {
     color: var(--primaryColor);
     font-size: 14px;
 }
+.card__plan a:hover{
+    text-decoration: none;
+    color: var(--buttonHover);
+}
 .card__plan span {
     color:var(--Dark-blue);
     font-weight: bold;
@@ -104,24 +109,26 @@ h1 {
     align-items: center;
 }
 .card__button {
-    background-color: var(--primaryColor);
-    width: 85%;
-    border: none;
-    border-radius: 10px;
-}
-.card__button a {
-    display: block;
     color: #fff;
     padding: 1rem;
-    
+    background-color: var(--primaryColor);
+    width: 85%;
+    border-radius: 10px;
+    text-align: center;
+}
+.card__button:hover {
+    background-color: var(--buttonHover);
 }
 .card__button__cancel {
     color: inherit;
-    padding: 2rem;
+    margin: 1.8rem 0;
+}
+.card__button__cancel:hover {
+    color: black;
 }
 
 .card__button__cancel,
-.card__button a {
+.card__button {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
