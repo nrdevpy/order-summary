@@ -1,5 +1,16 @@
+/* # Properties order
+
+1. Positioning.
+2. Box Model.
+3. Text.
+4. Visuals.
+5. Miscellaneous. */
+
 /* ····· Custom properties ····· */
 :root {
+
+    /* Typography */
+    --fonts: 'Red Hat Display', sans-serif;
 
     /* Colors */
     --primaryColor: hsl(245, 75%, 52%);
@@ -8,21 +19,17 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --buttonHover: #766CF1;
-
-    /* Typography */
-    --fonts: 'Red Hat Display', sans-serif;
-    
 }
 
 /* ····· Globals ····· */
 * {
-    font-family: var(--fonts);
     box-sizing: border-box;
+    font-family: var(--fonts);
 }
 
 body {
-    height: 100vh;
     margin: 0;
+    height: 100vh;
     color: var(--Dark-blue)
 }
 
@@ -31,8 +38,8 @@ img {
 }
 
 h1 {
-    font-size: 24px;
     text-align: center;
+    font-size: 24px;
 }
 
 /* ····· Utilities ····· */
@@ -49,8 +56,9 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
 
-    background-color: var(--brightBlue);
     height: 100%;
+    
+    background-color: var(--brightBlue);
 }
 @media screen and (min-width: 1280px) {
     .background {
@@ -62,11 +70,11 @@ h1 {
 
 /*** Card ***/
 .card {
+    max-width: 25rem;
+    border-radius: 20px;
+    
     color:var(--Desaturated-blue);
     background-color: #fff;
-    max-width: 25rem;
-    
-    border-radius: 20px;
     overflow: hidden;
 }
 /** Card Main **/
@@ -80,11 +88,12 @@ h1 {
     justify-content: space-between;
     align-items: center;
     
-    background-color: var(--Very-pale-blue);
-    border-radius: 10px;
     padding: 1rem;
     margin: 2rem auto;
     width: 90%;
+    
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
 }
 .card__plan__text {
     display: flex;
@@ -94,8 +103,8 @@ h1 {
     margin: 0;
 }
 .card__plan a {
-    color: var(--primaryColor);
     font-size: 14px;
+    color: var(--primaryColor);
 }
 .card__plan a:hover{
     text-decoration: none;
@@ -117,19 +126,21 @@ h1 {
     align-items: center;
 }
 .card__button {
-    color: #fff;
-    padding: 1rem;
-    background-color: var(--primaryColor);
     width: 85%;
+    padding: 1rem;
     border-radius: 10px;
+
     text-align: center;
+
+    color: #fff;
+    background-color: var(--primaryColor);
 }
 .card__button:hover {
     background-color: var(--buttonHover);
 }
 .card__button__cancel {
-    color: inherit;
     margin: 1.8rem 0;
+    color: inherit;
 }
 .card__button__cancel:hover {
     color: black;
