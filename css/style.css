@@ -38,6 +38,7 @@ img {
 }
 
 h1 {
+    color: var(--Dark-blue);
     text-align: center;
     font-size: 24px;
 }
@@ -73,9 +74,9 @@ h1 {
     max-width: 25rem;
     border-radius: 20px;
     
-    color:var(--Desaturated-blue);
     background-color: #fff;
     overflow: hidden;
+    color:var(--Desaturated-blue);
 }
 /** Card Main **/
 .card__main p {
